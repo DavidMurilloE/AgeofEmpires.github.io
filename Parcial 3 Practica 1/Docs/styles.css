@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-bg, #333);
+    color: var(--header-text, #fff);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Light Theme */
+:root {
+    --background-color: #9fb53f;
+    --text-color: #333;
+    --header-bg: #007bff83;
+    --header-text: #fff;
+    --theme-button-bg: #ed0f0f;
+    --theme-button-text: #f7f6f6;
+    --footer-bg: #007BFF;
+    --footer-text: #fff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #121111;
+    --text-color: #fff;
+    --header-bg: #ac3988;
+    --header-text: #fff;
+    --theme-button-bg: #007bffa3;
+    --theme-button-text: #f5f9f7;
+    --footer-bg: #222;
+    --footer-text: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#theme-switch {
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
